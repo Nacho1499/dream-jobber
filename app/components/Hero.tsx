@@ -16,7 +16,7 @@ const Hero = () => {
           <p className="font-bold">
             Web development, Frontend development, Backend development
           </p>
-          <button className="p-3 bg-green-700 text-white shadow-md cursor-pointer rounded-full mt-4 w-[200px]">
+          <button className="p-3 bg-gradient-to-r from-teal-400 to-green-600 text-white shadow-md cursor-pointer rounded-full mt-4 w-[200px]">
             Get Started
           </button>
         </div>
@@ -29,40 +29,43 @@ const Hero = () => {
             alt="hero-image"
           />
           <div className="absolute  left-4 bottom-45 rounded-lg bg-white/70 backdrop-blur-md p-3 shadow-lg animate-bounce">
-            <p className="font-bold"> 🔔 Job Alert Subscribe</p>
+            <p className="font-bold bg-gradient-to-r from-lime-600 to-emerald-600 bg-clip-text text-transparent"> 🔔 Job Alert Subscribe</p>
           </div>
 
           <div className="absolute top-75 left-80 rounded-lg bg-white/70 backdrop-blur-md p-3 shadow-lg ">
-            <p className="mb-2 font-bold">1k+ candidates get jobs</p>
-            <div className="flex">
+            <p className="mb-2 font-bold bg-gradient-to-r from-lime-600 to-emerald-600 bg-clip-text text-transparent">1k+ candidates get jobs</p>
+            <div className="flex  relative">
               <img
-                className="rounded-full "
+                className="rounded-full object-cover h-10 w-10  "
                 src="/jobber1.jpg"
                 height={10}
                 width={50}
                 alt="candidates"
               />
               <img
-                className="rounded-full "
-                src="/jobber1.jpg"
+                className="rounded-full object-cover h-10 w-10 absolute left-8 "
+                src="/jobber2.jpg"
                 height={10}
                 width={50}
                 alt="candidates"
               />
               <img
-                className="rounded-full "
-                src="/jobber1.jpg"
+                className="rounded-full object-cover h-10 w-10 absolute left-15 "
+                src="/jobber3.jpg"
                 height={10}
                 width={50}
                 alt="candidates"
               />
               <img
-                className="rounded-full "
-                src="/jobber1.jpg"
+                className="rounded-full object-cover h-10 w-10 absolute left-23 "
+                src="/jobber4.jpg"
                 height={10}
                 width={50}
                 alt="candidates"
               />
+              <div className="rounded-full object-cover h-10 w-10 absolute left-30 bg-gradient-to-r from-teal-400 to-green-600">
+                <p className="text-white text-2xl font-bold text-center">+</p>
+              </div>
             </div>
           </div>
 
