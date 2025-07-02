@@ -17,7 +17,7 @@ const Hero = () => {
           <p className="font-bold text-gray-900">
             Web development, Frontend development, Backend development
           </p>
-          <button className="mt-6 w-[180px] md:w-[200px] p-3 bg-gradient-to-r from-teal-400 to-green-600 text-white rounded-full shadow-md">
+          <button className="mt-6 w-[180px] md:w-[200px] p-3 bg-green-700 text-white rounded-full shadow-md">
             Get Started
           </button>
         </div>

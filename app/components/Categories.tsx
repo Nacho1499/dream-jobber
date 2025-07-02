@@ -9,7 +9,7 @@ interface SlideItem {
 }
 
 const items: SlideItem[] = [
-    { id: 1, title: "Developer", img: "/jobber.jpg" },
+    { id: 1, title: "Developer", img: "/program3.jpg" },
     { id: 2, title: "Designer", img: "/jobber1.jpg" },
     { id: 3, title: "Marketer", img: "/jobber2.jpg" },
     { id: 4, title: "Writer", img: "/jobber3.jpg" },
@@ -41,9 +41,7 @@ const Categories = () => {
                             <p className="text-gray-600 text-sm flex-1">
                                 Find opportunities in {item.title}. Apply now and boost your career.
                             </p>
-                            <button className="mt-4 bg-gradient-to-r from-teal-400 to-green-600 text-white py-2 rounded-full hover:from-teal-500 hover:to-green-700 transition">
-                                Apply Now
-                            </button>
+                           
                         </div>
                     </div>
                 ))}
