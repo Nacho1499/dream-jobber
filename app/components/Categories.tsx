@@ -41,7 +41,9 @@ const Categories = () => {
                             <p className="text-gray-600 text-sm flex-1">
                                 Find opportunities in {item.title}. Apply now and boost your career.
                             </p>
-                           
+                            <button className="mt-4 bg-green-700 text-white py-2 rounded-full hover:from-teal-500 hover:to-green-700 transition">
+                                Apply Now
+                            </button>
                         </div>
                     </div>
                 ))}
