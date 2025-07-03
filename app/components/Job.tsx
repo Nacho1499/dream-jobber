@@ -13,18 +13,19 @@ interface SlideItem {
 }
 
 const items: SlideItem[] = [
-    { id: 1, type: "Physical", img: "/program3.jpg", location: "📌 Abuja", para: "Frontend Developer at Yootify Tech", salary: "#100k-#200k/month", day: "🕒 30 days left to apply" },
-    { id: 2, type: "Physical", img: "/market.jpg", location: "📌 Lagos", para: "Frontend Developer at Yootify Tech", salary: "#100k-#200k/month", day: "🕒 30 days left to apply" },
-    { id: 3, type: "Remote", img: "/service.jpg", location: "📌 Abuja", para: "Frontend Developer at Yootify Tech", salary: "#100k-#200k/month", day: "🕒 30 days left to apply" },
-    { id: 4, type: "Remote", img: "/design.jpg", location: " 📌 Ibadan", para: "Frontend Developer at Yootify Tech", salary: "#100k-#200k/month", day: " 🕒30 days left to apply" },
+    { id: 1, type: "Physical", img: "/program3.jpg", location: "📌 Abuja", para: "Frontend Developer at Yootify Tech", salary: "₦100k-₦200k/month", day: "🕒 30 days left to apply" },
+    { id: 2, type: "Physical", img: "/market.jpg", location: "📌 Lagos", para: "Frontend Developer at Yootify Tech", salary: "₦100k-₦200k/month", day: "🕒 30 days left to apply" },
+    { id: 3, type: "Remote", img: "/service.jpg", location: "📌 Abuja", para: "Frontend Developer at Yootify Tech", salary: "₦100k-₦200k/month", day: "🕒 30 days left to apply" },
+    { id: 4, type: "Remote", img: "/design.jpg", location: " 📌 Ibadan", para: "Frontend Developer at Yootify Tech", salary: "₦100k-₦200k/month", day: " 🕒30 days left to apply" },
 ];
 
 export default function Job() {
     return (
         <section className=" py-16 px-4">
-            <h2 className="text-3xl font-extrabold text-center text-green-700 mb-12">
+            <h2 className="text-3xl font-extrabold text-center text-green-700 mb-3">
                 Latest Jobs
             </h2>
+            <h3 className="text-gray-600 text-sm text-center mt-2 mb-8">live jobs - 5 added today.</h3>
 
             <div className="max-w-6xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 {items.map((item) => (
@@ -37,7 +38,7 @@ export default function Job() {
                                 src={item.img}
                                 alt={item.para}
                                 height={5} width={100}
-                                className="object-cover w-[70px] h-[70px] py-3 px-3 rounded-full"
+                                className="object-cover w-[70px] h-[70px] py-2 px-2 rounded-full"
                             />
                         </div>
 

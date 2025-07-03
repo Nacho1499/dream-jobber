@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
             Latest Jobs
           </Link>
           <Link href="/blogs" className="hover:text-green-600 transition">
-            Blogs
+            Gigs
           </Link>
         </div>
 
