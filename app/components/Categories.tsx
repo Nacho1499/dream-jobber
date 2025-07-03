@@ -38,7 +38,7 @@ const Categories = () => {
                             className="object-cover w-full h-48"
                         />
                         <div className="p-4 flex-1 flex flex-col justify-between">
-                            <h3 className="text-lg font-bold text-green-700 mb-2">
+                            <h3 className="text-lg font-bold  mb-2">
                                 {item.title}
                             </h3>
                             <h3 className="text-gray-600 text-sm flex-1 mb-2">{item.jobs}</h3>
