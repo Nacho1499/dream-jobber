@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 const Hero = () => {
   return (
+    <>
     <div className="bg-green-50 min-h-screen flex items-center">
       <div className="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-20">
 
@@ -17,9 +18,11 @@ const Hero = () => {
           <p className="font-bold text-gray-900">
             Web development, Frontend development, Backend development
           </p>
-          <button className="mt-6 w-[180px] md:w-[200px] p-3 bg-green-700 text-white rounded-full shadow-md">
+          <Link href="/login">
+          <button className="mt-6 w-[180px] md:w-[200px] p-3 bg-green-700 text-white rounded-full shadow-md cursor-pointer">
             Get Started
           </button>
+          </Link>
         </div>
 
         {/* IMAGE SECTION */}
@@ -54,7 +57,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
+     
     </div>
+     <div className="bg-green-50 p-4">
+       <p className="text-center text-green-700 text-sm animate-bounce lg:text-lg">Scroll Down <br />↓</p>
+      </div>
+      </>
   );
 };
 

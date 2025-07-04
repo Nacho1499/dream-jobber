@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React from 'react'
+import Link from "next/link";
 interface SlideItem {
     id: number;
     title: string;
@@ -45,9 +46,11 @@ const Categories = () => {
                             <p className="text-gray-600 text-sm flex-1">
                                 {item.description}
                             </p>
-                            <button className="mt-4 bg-green-700 text-white py-2 rounded-full hover:from-teal-500 hover:to-green-700 transition">
-                                Apply Now
+                           
+                            <button className="mt-4 bg-green-700 text-white py-2 rounded-full hover:from-teal-500 hover:to-green-700 transition cursor-pointer">
+                               <Link href="/login"> View Page</Link> 
                             </button>
+                           
                         </div>
                     </div>
                 ))}

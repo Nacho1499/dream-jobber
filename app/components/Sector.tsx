@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import Image from 'next/image';
 
@@ -11,9 +12,11 @@ export default function Sector() {
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-xl font-bold mb-2">For Employers</h1>
             <p>Find professionals from around the world and across all skills.</p>
-            <button className="mt-4 w-40 p-2 rounded-full text-white bg-green-700">
+            <Link href="/login">
+            <button className="mt-4 w-40 p-2 rounded-full text-white bg-green-700 cursor-pointer">
               Post jobs for Free
             </button>
+            </Link>
           </div>
           <div className="hidden md:block flex-1">
             <Image
@@ -31,13 +34,15 @@ export default function Sector() {
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-xl font-bold mb-2">For Employees</h1>
             <p>Build your professional profile, find new job opportunities.</p>
-            <button className="mt-4 w-40 p-2 rounded-full text-white bg-green-700">
-              Find Avaliable jobs
+            <Link href="/login">
+            <button className="mt-4 w-40 p-2 rounded-full text-white bg-green-700 cursor-pointer">
+                Find Avaliable jobs
             </button>
+            </Link>
           </div>
           <div className="hidden md:block flex-1">
             <Image
-              src="/sector.jpg"
+              src="/sector3.jpg"
               alt="sector"
               width={200}
               height={150}

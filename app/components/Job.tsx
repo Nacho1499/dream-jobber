@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 interface SlideItem {
     id: number;
@@ -27,7 +28,7 @@ export default function Job() {
             </h2>
             <h3 className="text-gray-600 text-sm text-center mt-2 mb-8">live jobs - 5 added today.</h3>
 
-            <div className="max-w-6xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="max-w-7xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 {items.map((item) => (
                     <div
                         key={item.id}
@@ -52,16 +53,25 @@ export default function Job() {
                                 <span className="text-xs md:text-sm px-3 py-1 rounded-full bg-green-100 text-green-600">
                                     {item.location}
                                 </span>
-                                <span className="text-xs md:text-sm px-3 py-1 rounded-full bg-gray-100 text-green-700">
+                                <span className="text-xs md:text-sm px-1 py-1 rounded-full bg-gray-100 text-green-700">
                                     {item.salary}
                                 </span>
                             </div>
 
                         </div>
-                        <p className="text-sm px-3 p-3 text-green-700">{item.day}</p>
+                        <div className="flex items-center gap-20">
+                            <div>
+                                <p className="text-sm px-3 p-3 text-green-700">{item.day}</p>
+                            </div>
+                            <div>
+                                <Link className="text-green-600 text-sm" href="/login">Get job →</Link>
+                            </div>
+                        </div>
                     </div>
                 ))}
+
             </div>
+
         </section>
     );
 }
