@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Sector() {
   return (
     <div className='py-16 px-4'>
-      <h1 className='text-3xl  text-center font-bold lg:text-5xl'>Join our global crowd</h1>
+      <h1 className='text-3xl  text-center font-bold lg:text-5xl'>Join our Wealthpath careers</h1>
       <p className='text-center mt-8'>Whether you’re a student, a stay-at-home parent, a professional, or a retiree, our global <br /> community
         embraces everyone, regardless of their background or abilities.</p>
       <div className='max-w-3xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-5  mt-10'>

@@ -4,9 +4,9 @@ import Image from 'next/image'
 function Choose() {
     return (
         <div className='py-16 px-4'>
-            <h1 className='text-3xl text-center font-bold'>Why CrowdGen?</h1>
+            <h1 className='text-3xl text-center font-bold'>Why Wealthpath careers?</h1>
             <p className='text-center mt-8'>We are committed to providing a fair, supportive, and healthy environment where everyone can succeed. <br />
-                Read our Crowd Code of Ethics.</p>
+                Read our Wealthpath careers Code of Ethics.</p>
 
             <div className='max-w-6xl mx-auto grid grid-cols-1  lg:grid-cols-3 gap-5 mt-10'>
                 <div className='border-solid border border-gray-200 p-5 rounded-lg'>

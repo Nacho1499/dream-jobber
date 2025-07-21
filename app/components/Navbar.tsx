@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-4">
         <Link href="/">
           <h1 className="text-2xl bg-gradient-to-r from-lime-600 to-emerald-600 bg-clip-text text-transparent font-bold cursor-pointer">
-            Dream-Jobber
+            Wealthpath careers
           </h1>
         </Link>
 
