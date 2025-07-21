@@ -7,15 +7,15 @@ interface SlideItem {
     id: number;
     title: string;
     img: string;
-    jobs: string;
+
     description: string
 }
 
 const items: SlideItem[] = [
-    { id: 1, title: "Development & IT", img: "/tasks1.webp", jobs: "8 jobs", description: "Frontend, Backend, Web and App development." },
-    { id: 2, title: "Marketing & sales", img: "/tasks2.webp", jobs: "5 jobs", description: "advertising, Digital marketing and Branding." },
-    { id: 3, title: "Customer Service", img: "/task3.webp", jobs: "1 job", description: "Customer experience and Account management." },
-    { id: 4, title: "Design & Creative", img: "/task4.webp", jobs: "4 jobs", description: "Graphic, Digital and Product design." },
+    { id: 1, title: "Improve VR technology", img: "/tasks1.webp", description: "Improve VR technology." },
+    { id: 2, title: "Evaluate text-to-speech audio clips", img: "/tasks2.webp", description: "advertising, Digital marketing and Branding." },
+    { id: 3, title: "Evaluate search results on entertainment platforms", img: "/task3.webp", description: "Customer experience and Account management." },
+    { id: 4, title: "Complete a wide variety tasks online", img: "/task4.webp", description: "Graphic, Digital and Product design." },
 ]
 const Categories = () => {
     return (
@@ -26,7 +26,7 @@ const Categories = () => {
             <p className="text-center mt-4 mb-10">Find tasks that fit your lifestyle and earn on your own schedule by applying to one or multiple projects.</p>
 
 
-            <div className="container max-w-7xl mx-auto mt-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3  gap-6 px-4">
+            <div className="container max-w-6xl mx-auto mt-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3  gap-6 px-2">
                 {items.map((item) => (
                     <div
                         key={item.id}
@@ -43,7 +43,6 @@ const Categories = () => {
                             <h3 className="text-lg font-bold  mb-2">
                                 {item.title}
                             </h3>
-                            <h3 className="text-gray-600 text-sm flex-1 mb-2">{item.jobs}</h3>
                             <p className="text-gray-600 text-sm flex-1">
                                 {item.description}
                             </p>
@@ -53,7 +52,7 @@ const Categories = () => {
                 ))}
             </div>
             <div className="text-center mt-9">
-                <Link href="/jobs" className="bg-green-700  text-white px-5 py-2 rounded-full">Explore all projects</Link>
+                <Link href="/#" className="bg-green-700  text-white px-5 py-2 rounded-full">Explore all projects</Link>
 
             </div>
 

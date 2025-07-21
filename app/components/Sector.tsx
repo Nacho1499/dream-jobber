@@ -10,7 +10,7 @@ export default function Sector() {
       <div className='max-w-3xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-5  mt-10'>
 
         <div>
-          <div className='flex gap-2 items-center justify-center'>
+          <div className='flex gap-2 item-center justify-center'>
             <div>
               <Image className='mx-auto' src="/romote.svg" height={15} width={35} alt='remote' />
             </div>

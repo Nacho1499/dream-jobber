@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
 
@@ -21,10 +19,10 @@ const Navbar: React.FC = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8 font-medium text-green-700">
           <Link href="/" className="hover:text-green-600 transition">
-            Home
+            Help desk
           </Link>
           <Link href="/about" className="hover:text-green-600 transition">
-            About
+            View projects
           </Link>
 
           <Link href="/blogs" className="bg-green-700 text-white px-4 py-2 w-[100px] text-center rounded-full">
@@ -63,33 +61,27 @@ const Navbar: React.FC = () => {
       >
         <div className="bg-white/90 backdrop-blur-md rounded p-4 space-y-4 font-medium text-green-800">
           <Link
-            href="/"
+            href="#"
             onClick={toggleMenu}
             className="block hover:text-green-600 transition"
           >
-            Home
+            Help desk
           </Link>
           <Link
-            href="/about"
+            href="/#"
             onClick={toggleMenu}
             className="block hover:text-green-600 transition"
           >
-            About
+            View projects
           </Link>
           <Link
-            href="/jobs"
+            href="/#"
             onClick={toggleMenu}
             className="block hover:text-green-600 transition"
           >
-            Latest Jobs
+            Login
           </Link>
-          <Link
-            href="/blogs"
-            onClick={toggleMenu}
-            className="block hover:text-green-600 transition"
-          >
-            Blogs
-          </Link>
+          
         </div>
       </div>
     </nav>

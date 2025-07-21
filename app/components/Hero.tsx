@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="bg-green-50 min-h-screen flex items-center">
         <div className="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-20">
 
-          {/* TEXT SECTION */}
+         
           <div className="text-center md:text-left max-w-lg">
             <h1 className="text-4xl md:text-5xl font-bold antialiased">
               Got Talent? <br />
@@ -16,14 +16,14 @@ const Hero = () => {
             <p className="mt-4 text-gray-700">Earn remotely by completing online tasks that help improve AI. 
               Work at your preferred time and gain real-world, hands-on experience in training AI.</p>
             
-            <Link href="/login">
+            <Link href="/#">
               <button className="mt-6 w-[180px] md:w-[200px] p-3 bg-green-700 text-white rounded-full shadow-md cursor-pointer">
                 Get Started
               </button>
             </Link>
           </div>
 
-          {/* IMAGE SECTION */}
+         
           <div className="relative w-full max-w-xl">
             <Image
               className="rounded-lg w-full h-auto object-cover"
@@ -33,14 +33,14 @@ const Hero = () => {
               alt="hero-image"
             />
 
-            {/* 🔔 Job Alert Overlay */}
+          
             <div className="absolute left-4 bottom-4 rounded-lg bg-white/70 backdrop-blur-md p-3 shadow-lg animate-bounce">
               <p className="font-bold bg-gradient-to-r from-lime-600 to-emerald-600 bg-clip-text text-transparent">
                 🔔 Job Alert Subscribe
               </p>
             </div>
 
-            {/* 1k+ Candidates Overlay */}
+           
             <div className="absolute top-4 right-4 rounded-lg bg-white/70 backdrop-blur-md p-3 shadow-lg">
               <p className="mb-2 font-bold bg-gradient-to-r from-lime-600 to-emerald-600 bg-clip-text text-transparent">
                 1k+ candidates get jobs
