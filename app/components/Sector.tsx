@@ -35,7 +35,7 @@ export default function Sector() {
         <div>
           <div className='flex gap-2 items-center justify-center'>
             <div>
-              <Image className='mx-auto' src="/lang.svg" height={15} width={35} alt='remote' />
+              <Image className='mx-auto' src="/earnings.svg" height={15} width={35} alt='remote' />
             </div>
             <div>
               <h1 className='text-3xl font-bold'>$67M</h1>
@@ -47,7 +47,7 @@ export default function Sector() {
          <div>
           <div className='flex gap-2 items-center justify-center'>
             <div>
-              <Image className='mx-auto' src="/lang.svg" height={15} width={35} alt='remote' />
+              <Image className='mx-auto' src="/country.svg" height={15} width={35} alt='remote' />
             </div>
             <div>
               <h1 className='text-3xl font-bold'>75</h1>
