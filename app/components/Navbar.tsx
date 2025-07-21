@@ -26,12 +26,12 @@ const Navbar: React.FC = () => {
           <Link href="/about" className="hover:text-green-600 transition">
             About
           </Link>
-          <Link href="/jobs" className="hover:text-green-600 transition">
-            Latest Jobs
+
+          <Link href="/blogs" className="bg-green-700 text-white px-4 py-2 w-[100px] text-center rounded-full">
+            Login
           </Link>
-          <Link href="/blogs" className="hover:text-green-600 transition">
-            Gigs
-          </Link>
+          
+          
         </div>
 
         {/* Mobile Hamburger */}
