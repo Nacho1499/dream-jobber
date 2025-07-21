@@ -42,7 +42,6 @@ export default function Sector() {
             </div>
           </div>
           <h4 className='text-center'>Earned in 2024</h4>
-
         </div>
          <div>
           <div className='flex gap-2 items-center justify-center'>
