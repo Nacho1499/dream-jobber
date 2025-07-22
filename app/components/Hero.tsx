@@ -16,7 +16,7 @@ const Hero = () => {
             <p className="mt-4 text-gray-700">Earn extra income from home by completing simple digital tasks that improve artificial intelligence.
                Work on your own schedule—no experience needed—and gain practical skills in AI development.</p>
 
-            <Link href="/#">
+            <Link href="/login">
               <button className="mt-6 w-[180px] md:w-[200px] p-3 bg-green-700 text-white rounded-full shadow-md cursor-pointer">
                 Get Started
               </button>
