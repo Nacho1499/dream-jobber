@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
             View projects
           </Link>
           <Link
-            href="/#"
+            href="/login"
             onClick={toggleMenu}
             className="block hover:text-green-600 transition"
           >

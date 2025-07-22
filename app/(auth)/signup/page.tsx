@@ -28,7 +28,7 @@ export default function SignUpPage() {
       {/* Left Side Image */}
       <div className="hidden md:flex md:w-1/2 bg-green-700 items-center justify-center">
         <Image
-          src="/jobber1.jpg"
+          src="/jobber2.jpg"
           alt="Sign Up"
           width={600}
           height={600}
