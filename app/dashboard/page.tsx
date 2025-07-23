@@ -26,7 +26,7 @@ const sidebarLinks: SidebarLink[] = [
     { name: "Training", href: "/#" },
     { name: "Active project", href: "/#" },
     { name: "Task history", href: "/#" },
-      { name: "Payment", href: "/#" },
+    { name: "Payment", href: "/#" },
 ];
 
 const Page = () => {
@@ -54,7 +54,7 @@ const Page = () => {
             await signOut(auth);
             toast.success(`Logout successful: (${user?.displayName || "Profile"})`);
             setTimeout(() => {
-                router.push("/");
+                router.push("/login");
             }, 2000);
         } catch (error) {
             console.error("Logout failed:", error);
@@ -143,7 +143,7 @@ const Page = () => {
                 transition={{ type: "spring", stiffness: 250, damping: 30 }}
                 className="fixed top-0 left-0 z-20 w-64 bg-white shadow-md h-screen p-6 flex flex-col overflow-y-auto md:relative"
             >
-                <div className="text-2xl font-extrabold mb-8 text-blue-700">Wealthpath careers</div>
+                <div className="text-2xl font-extrabold mb-8 bg-gradient-to-r from-lime-600 to-emerald-600 bg-clip-text text-transparent">Wealthpath</div>
                 <nav className="flex flex-col space-y-3 flex-1">
                     {sidebarLinks.map(({ name, href }) => (
                         <a
@@ -154,8 +154,8 @@ const Page = () => {
                                 setSidebarOpen(false);
                             }}
                             className={`block px-4 py-2 rounded-md font-medium transition-colors ${activeLink === name
-                                    ? "bg-gradient-to-r from-blue-800 to-indigo-900 text-white"
-                                    : "text-gray-700 hover:bg-blue-100 hover:text-blue-700"
+                                ? "bg-green-700"
+                                : "text-gray-700 hover:bg-green-100 hover:text-black"
                                 }`}
                         >
                             {name}
@@ -182,7 +182,7 @@ const Page = () => {
                             onClick={() => setDropdownOpen(!dropdownOpen)}
                             className="flex items-center space-x-2 p-2 rounded-md hover:bg-gray-200"
                         >
-                            <User className="h-6 w-6 text-blue-700" />
+                            <User className="h-6 w-6 text-green-700" />
                             <span className="font-medium text-gray-700">
                                 {user?.displayName || "Profile"}
                             </span>
@@ -194,7 +194,7 @@ const Page = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: -10 }}
                                     transition={{ duration: 0.2 }}
-                                    className="absolute right-6 mt-3 w-52 bg-white shadow-lg rounded-md z-40 sm:left-5 mt-3"
+                                    className="absolute right-6 mt-3 w-fit bg-white shadow-lg rounded-md z-40 sm:left-5 mt-3"
                                 >
                                     {user?.email && (
                                         <div className="px-4 py-2 text-sm text-gray-500 border-b">
