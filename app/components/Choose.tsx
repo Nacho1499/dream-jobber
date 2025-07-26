@@ -21,6 +21,21 @@ const reasons = [
     description: 'Whether you’re on a beach or at home with a baby, you can mold your work around your life.',
     icon: '/choose3.svg',
   },
+  {
+    title: 'User-friendly guides',
+    description: 'Read user-friendly guides and complete practice quizzes to increase your chances of passing the tests',
+    icon: '/books.svg',
+  },
+  {
+    title: 'Work  with wealthpath',
+    description: 'Get into wealthpath work right away, even without technical experience. Boost your resume with in-demand skills.',
+    icon: '/work.svg',
+  },
+  {
+    title: 'Competitive pay',
+    description: 'We believe in fair compensation for the work you do, and this is reflected in the pay you receive.',
+    icon: '/earnings.svg',
+  },
 ];
 
 const Choose = () => {

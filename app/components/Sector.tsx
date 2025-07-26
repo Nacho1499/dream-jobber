@@ -29,8 +29,8 @@ export default function Sector() {
         {[
           { icon: '/romote.svg', value: '1m+', label: 'Remote members' },
           { icon: '/lang.svg', value: '100', label: 'Languages' },
-          { icon: '/earnings.svg', value: '$67M', label: 'Earned in 2024' },
-          { icon: '/country.svg', value: '75', label: 'Countries' },
+          { icon: '/work.svg', value: '$67M', label: 'Earned in 2024' },
+          { icon: '/choose3.svg', value: '75', label: 'Countries' },
         ].map((item, idx) => (
           <motion.div
             key={item.label}
