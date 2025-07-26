@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const reasons = [
   {
@@ -50,6 +51,7 @@ const Choose = () => {
         Why Wealthpath Careers?
       </motion.h1>
 
+
       <motion.p
         className="text-center mt-6 text-gray-700 leading-relaxed"
         initial={{ opacity: 0 }}
@@ -57,7 +59,7 @@ const Choose = () => {
         transition={{ delay: 0.2, duration: 0.6 }}
       >
         We are committed to providing a fair, supportive, and healthy environment where everyone can succeed. <br />
-        <span className="text-green-700 font-semibold">Read our Wealthpath Careers Code of Ethics.</span>
+        <Link href="/ethics" className="text-green-700 font-semibold">Read our Wealthpath Careers Code of Ethics.</Link>
       </motion.p>
 
       <motion.div

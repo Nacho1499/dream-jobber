@@ -21,6 +21,9 @@ const Navbar: React.FC = () => {
           <Link href="/" className="hover:text-green-600 transition">
             Help desk
           </Link>
+          <Link href="/ethics" className="hover:text-green-600 transition">
+            Ethics
+          </Link>
           <Link href="/about" className="hover:text-green-600 transition">
             View projects
           </Link>
@@ -68,7 +71,14 @@ const Navbar: React.FC = () => {
             Help desk
           </Link>
           <Link
-            href="/#"
+            href="#"
+            onClick={toggleMenu}
+            className="block hover:text-green-600 transition"
+          >
+            Ethics
+          </Link>
+          <Link
+            href="/ethics"
             onClick={toggleMenu}
             className="block hover:text-green-600 transition"
           >

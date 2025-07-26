@@ -13,10 +13,10 @@ interface SlideItem {
 }
 
 const items: SlideItem[] = [
-  { id: 1, title: "Improve VR technology", img: "/tasks1.webp", description: "Improve VR technology." },
-  { id: 2, title: "Evaluate text-to-speech audio clips", img: "/tasks2.webp", description: "Advertising, digital marketing, and branding." },
-  { id: 3, title: "Evaluate search results on entertainment platforms", img: "/task3.webp", description: "Customer experience and account management." },
-  { id: 4, title: "Complete a wide variety of tasks online", img: "/task4.webp", description: "Graphic, digital, and product design." },
+  { id: 1, title: "Improve VR technology", img: "/tasks1.webp", description: "WealthPath Careers supports innovation by helping tech professionals find roles where they can contribute to advancing VR technology and immersive experiences." },
+  { id: 2, title: "Evaluate text-to-speech audio clips", img: "/tasks2.webp", description: "WealthPath Careers offers opportunities in emerging fields, including roles where professionals evaluate text-to-speech audio clips for quality, clarity, and accuracy." },
+  { id: 3, title: "Evaluate search results on entertainment platforms", img: "/task3.webp", description: "WealthPath Careers connects users to roles that involve evaluating search results on entertainment platforms to ensure relevance, accuracy, and user satisfaction." },
+  { id: 4, title: "Complete a wide variety of tasks online", img: "/task4.webp", description: "WealthPath Careers allows users to complete a wide variety of tasks online, including browsing job listings, submitting applications, uploading resumes, and tracking application status—all from one convenient platform." },
 ];
 
 const containerVariants = {
