@@ -38,9 +38,9 @@ export default function Sector() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 + idx * 0.2, duration: 0.6 }}
           >
-            <div className='flex gap-1 items-center justify-center'>
-              <Image className='' src={item.icon} height={35} width={35} alt={item.label} />
-              <h1 className='text-3xl font-bold'>{item.value}</h1>
+            <div className='flex gap-2 items-center justify-center'>
+              <Image className='' src={item.icon} height={35} width={28} alt={item.label} />
+              <h1 className='text-2xl font-bold'>{item.value}</h1>
             </div>
             <h4 className='text-center'>{item.label}</h4>
           </motion.div>

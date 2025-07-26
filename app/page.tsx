@@ -4,6 +4,7 @@ import Categories from "./components/Categories";
 import Choose from "./components/Choose";
 import Cta from "./components/Cta";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Categories />
       <Choose />
       <Cta />
+      <Footer/>
 
 
 
