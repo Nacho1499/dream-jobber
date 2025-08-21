@@ -87,7 +87,7 @@ const Categories = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1.2, duration: 0.5 }}
       >
-        <Link href="/#" className="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition">
+        <Link href="/#" className="bg-green-700 text-white px-5 py-4 rounded-full hover:bg-green-800 transition">
           Explore all projects
         </Link>
       </motion.div>

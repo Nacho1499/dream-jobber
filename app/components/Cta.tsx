@@ -20,7 +20,7 @@ function Cta() {
         </p>
         <Link
           href="/login"
-          className="bg-green-600 hover:bg-green-500 transition duration-300 text-white px-6 py-3 rounded-full font-medium"
+          className="bg-green-600  hover:bg-green-500 transition duration-300 text-white px-6 py-4 rounded-full font-medium"
         >
           Work with Wealthpath
         </Link>

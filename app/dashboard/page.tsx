@@ -27,9 +27,10 @@ interface card {
 
 const cardItems: card[] = [
 
-    { id: 1, image: "/task3.webp", title: "emmanuel", description: "This project is designed to [state the purpose — e.g., solve a problem, create a product, build a platform].", Link: "/apply_form", amount: "$5 / per task" },
-    { id: 2, image: "/tasks2.webp", title: "emmanuel", description: "This project is designed to [state the purpose — e.g., solve a problem, create a product, build a platform].", Link: "/apply_form", amount: "$8 / per task" },
-    { id: 3, image: "/tasks1.webp", title: "emmanuel", description: "This project is designed to [state the purpose — e.g., solve a problem, create a product, build a platform].", Link: "/apply_form", amount: "$9 / per task" }
+    { id: 1, image: "/task3.webp", title: "Metamine", description: "This project is designed to [state the purpose — e.g., solve a problem, create a product, build a platform].", Link: "/apply_form", amount: "$5 / per task" },
+    { id: 2, image: "/tasks2.webp", title: "Lumin", description: "This project is designed to [state the purpose — e.g., solve a problem, create a product, build a platform].", Link: "/apply_form", amount: "$8 / per task" },
+    { id: 3, image: "/tasks1.webp", title: "Evalo", description: "This project is designed to [state the purpose — e.g., solve a problem, create a product, build a platform].", Link: "/apply_form", amount: "$9 / per task" },
+     { id:4, image: "/task4.webp", title: "Echo IQ", description: "This project is designed to [state the purpose — e.g., solve a problem, create a product, build a platform].", Link: "/apply_form", amount: "$9 / per task" }
 ];
 
 interface SidebarLink {
