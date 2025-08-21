@@ -179,7 +179,7 @@ const Page = () => {
                     ))}
                 </nav>
                 <div className="text-xs text-gray-400 mt-auto">
-                    © 2025. All Rights Reserved
+                    © {new Date().getFullYear()}. All Rights Reserved
                 </div>
             </motion.aside>
 
