@@ -12,9 +12,25 @@ import { auth } from "@/lib/firebase";
 import Link from "next/link";
 import { toast } from "sonner";
 
+import Image from "next/image";
+import { link } from "fs";
+import { div } from "framer-motion/client";
 
+interface card {
+    id: number
+    image: string;
+    title: string;
+    description: string;
+    Link: string;
+    amount: string
+};
 
+const cardItems: card[] = [
 
+    { id: 1, image: "/task3.webp", title: "emmanuel", description: "This project is designed to [state the purpose — e.g., solve a problem, create a product, build a platform].", Link: "/apply_form", amount: "$5 / per task" },
+    { id: 2, image: "/tasks2.webp", title: "emmanuel", description: "This project is designed to [state the purpose — e.g., solve a problem, create a product, build a platform].", Link: "/apply_form", amount: "$8 / per task" },
+    { id: 3, image: "/tasks1.webp", title: "emmanuel", description: "This project is designed to [state the purpose — e.g., solve a problem, create a product, build a platform].", Link: "/apply_form", amount: "$9 / per task" }
+];
 
 interface SidebarLink {
     name: string;
@@ -29,7 +45,7 @@ const sidebarLinks: SidebarLink[] = [
     { name: "Payment", href: "/#" },
 ];
 
-const Page = () => {
+const Page = () => { 
     useEffect(() => {
         document.documentElement.classList.remove("dark");
     }, []);
@@ -184,6 +200,7 @@ const Page = () => {
                         >
                             <User className="h-6 w-6 text-green-700" />
                             <span className="font-medium text-gray-700">
+                                
                                 {user?.displayName || "Profile"}
                             </span>
                         </button>
@@ -216,11 +233,51 @@ const Page = () => {
                         </AnimatePresence>
                     </div>
                 </header>
+                <div >
+                    <h1 className="text-center font-medium text-xl mt-5 text-gray-800 font-semibold">Avaliable Projects</h1>
+
+                
+                <div className="grid max-w-7xl mx-auto grid-cols-1 lg:grid-cols-3 gap-8 p-6 mt-7 ">
+                    {cardItems.map((item) => (
+                        <div
+                            key={item.id}
+                            className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                        >
+                            <Image
+                                className="rounded-t-xl object-cover"
+                                src={item.image}
+                                height={300}
+                                width={600}
+                                alt={item.title}
+                            />
+
+                            <div className="p-5">
+                                <h1 className="text-xl font-semibold text-gray-800">{item.title}</h1>
+                                <p className="mt-3 text-gray-600 leading-relaxed text-md">{item.description}</p>
+
+                                <hr className="my-4 border-gray-200" />
+
+                                <div className="flex items-center justify-between">
+                                    <span className="text-sm font-medium text-green-700">{item.amount}</span>
+                                    <Link
+                                        href={item.Link}
+                                        className="text-sm font-medium text-white bg-green-600 px-4 py-2 rounded-lg hover:bg-green-700 transition-colors"
+                                    >
+                                        Apply Here
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+
 
 
 
 
             </div>
+        </div>
         </div>
     );
 };
